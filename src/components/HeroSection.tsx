@@ -15,18 +15,6 @@ const settings = {
 };
 const CarouselItem = () => {
   return (
-    // <div className="relative w-full">
-    //   <Image
-    //     src="https://static.bunnycdn.ru/i/cache/images/3/36/369df6edd1ace804bd5cb4ef2f785aa5.jpg-w1024"
-    //     alt="item"
-    //     quality={100}
-    //     fill
-    //     sizes="100vw"
-    //     style={{
-    //       objectFit: "cover",
-    //     }}
-    //   />
-    // </div>
     <div className="h-[25em]  md:h-[32em] xl:h-[42em] 2xl:h-[50em] relative bg-cover bg-center bg-[url('https://static.bunnycdn.ru/i/cache/images/3/36/369df6edd1ace804bd5cb4ef2f785aa5.jpg')] w-full">
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50">
         <div className="grid content-end h-full p-10 md:p-20 gap-y-2">
