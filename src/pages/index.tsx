@@ -1,34 +1,14 @@
-import React from "react";
-import { NextPageContext } from "next";
-import { getSession } from "next-auth/react";
-import useInfoModalStore from "@/hooks/useInfoModalStore";
-import Navbar from "@/components/Navbar";
-import Layout from "@/components/Layout";
-import HeroSection from "@/components/HeroSection";
+import React, { useEffect } from "react";
 
-// export async function getServerSideProps(context: NextPageContext) {
-//   const session = await getSession(context);
+import { Layout } from "@/layouts";
+import { Home } from "@/components";
 
-//   if (!session) {
-//     return {
-//       redirect: {
-//         destination: "/auth",
-//         permanent: false,
-//       },
-//     };
-//   }
-
-//   return {
-//     props: {},
-//   };
-// }
-
-const Home = () => {
+const HomePage = () => {
   return (
     <Layout>
-      <HeroSection />
+      <Home />
     </Layout>
   );
 };
 
-export default Home;
+export default HomePage;
